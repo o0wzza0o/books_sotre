@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
+import { HashRouter, Routes, Route, useLocation } from 'react-router-dom';
 import { Navbar } from './components/layout/Navbar';
 import { Footer } from './components/layout/Footer';
 import { HomePage } from './pages/HomePage';
@@ -37,9 +37,9 @@ const AppRoutes: React.FC = () => (
 );
 
 const App: React.FC = () => (
-  <BrowserRouter>
+  <HashRouter>
     <AppRoutes />
-  </BrowserRouter>
+  </HashRouter>
 );
 
 export default App;
